@@ -1,5 +1,9 @@
 from flask import Flask
 from flask_jwt_extended import JWTManager
+from config import init_db
+
+init_db(app)
+
 
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = 'super-secret-key'
