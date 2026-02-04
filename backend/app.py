@@ -2,6 +2,7 @@ from flask import Flask
 from flask_jwt_extended import JWTManager
 from config import init_db
 from routes.auth import auth
+from routes.jobs import jobs
 
 
 
