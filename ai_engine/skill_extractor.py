@@ -17,3 +17,13 @@ def extract_skills(text):
             found_skills.append(skill)
 
     return found_skills
+
+
+if __name__ == "__main__":
+    sample_text = """
+    I have experience in Python, SQL, Machine Learning and Flask.
+    I also worked with React and NodeJS.
+    """
+
+    skills = extract_skills(sample_text)
+    print("Extracted skills:", skills)
